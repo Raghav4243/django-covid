@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static "css/st1.css" %}">
+  </head>
+  <body id="bg" style="background-image: url('{% static "images/bg.png"%}')";>
+
+<div class="d1">
+  <h2><center>Corona Virus <span class="sp">Live</span> Updates in {{country}}</center></h2>
+  <br>
+</div>
+
+<br>
+<center><b><h3>{{continent}}</h3></b></center>
+<center><b><p><h3>Date in {{country}} is {{day}}</h3></p></b></center>
+<hr>
+<br>
+<center>
+    <form action="{% url 'home' %}" method="post">
+      {% csrf_token %}
+      <span class="sp2">Country Name</span> : <input type="text" name="country" placeholder="Country">
+      <input class="btn btn-primary" type="submit" value="Enter">
+    </form>
+  </center>
+  <br>
+    <hr>
+    <br><br>
+<div class="daa">
+
+  <div class="tc pop1">
+    <h4 id="pop">Population</h4><br>
+    <hr>
+    <h3>{{population}}</h3>
+  </div>
+
+  <div class="tc all1">
+    <h4 id="all">Total Cases</h4><br>
+    <hr>
+    <h3>{{all}}</h3>
+  </div>
+
+
+<div class="tc act1">
+  <h4 id="act">Active Cases</h4> <br>
+  <hr>
+  <h3>{{active}}</h3>
+</div>
+
+<div class="tc rec1">
+  <h4 id="rec">Recovered</h4><br>
+  <hr>
+  <h3>{{recovered}}</h3>
+</div>
+
+<div class="tc td1">
+  <h4 id="td">Total Deaths</h4><br>
+  <hr>
+  <h3>{{deaths}}</h3>
+</div>
+
+<div class="tc nd1">
+  <h4 id="nd">New Deaths</h4><br>
+  <hr>
+  <h3>{{ndeaths}}</h3>
+</div>
+
+<div class="tc nc1">
+  <h4 id="nc">New Cases</h4><br>
+  <hr>
+  <h3>{{ncases}}</h3>
+</div>
+
+
+<div class="tc crit1">
+  <h4 id="crit">Critical Cases</h4><br>
+  <hr>
+  <h3>{{critical}}</h3>
+</div>
+
+<div class="tc tes1">
+  <h4 id="tes">Total No. of Tests</h4><br>
+  <hr>
+  <h3>{{ttest}}</h3>
+</div>
+</div>
+  </body>
+</html>

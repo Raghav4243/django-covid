@@ -1,0 +1,85 @@
+.d1{
+  top : 0% ;
+  height: 55px;
+  width: 100%;
+  background-color: lightgrey ;
+}
+
+.sp{
+  color: red ;
+}
+
+.sp2{
+  font-size: 25px;
+}
+
+
+.tc{
+
+  padding-top: 30px;
+  padding-left: 15px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  float :left;
+    background-color: white ;
+    width: 300px;
+    height: 170px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 15px;
+}
+.daa{
+  margin-left:7%;
+}
+
+
+#pop{
+  color: red;
+}
+.pop1{
+  border:2px solid red ;
+}
+
+
+.all1{
+  border:2px solid blue ;
+}
+#all{
+  color:blue;
+}
+
+
+
+#act{
+  color: green;
+}
+.act1{
+  border:2px solid green ;
+}
+
+
+
+#rec{
+  color: lightgreen;
+}
+.rec1{
+  border:2px solid lightgreen ;
+}
+
+
+#td{
+  color: lightblue;
+}
+.td1{
+  border:2px solid lightblue ;
+}
+#nd{color: orange}
+.nd1{border:2px solid orange}
+
+#nc{color: yellow}
+.nc1{border:2px solid yellow}
+
+#crit{color: salmon}
+.crit1{border:2px solid salmon}
+
+#tes{color: lightcoral}
+.tes1{border:2px solid lightcoral}
